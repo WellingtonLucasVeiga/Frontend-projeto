@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagens/computer-laptop-icon.png" type="image/x-icon">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" href="../estilos/style.css" as="style">
+
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link rel="stylesheet" href="../estilos/mediaquery.css" media="screen">
+
+    <title>Sobre mim</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="../index.html">
+                <h1 class="texto-logo">
+                    <span class="letraCustom">F</span>ront<span class="letraCustom">Q</span>uestions
+                </h1>
+            </a>
+            <nav class="linkPrincipal">
+                <a href="../index.html#titulo-card" target="_self" rel="previous">Tecnologias</a>
+                <a href="../index.html#titulo-recomendacao" target="_self" rel="next">Recomendações</a>
+                <a href="../paginas/sobre.html" target="_self" rel="author">Sobre</a>
+            </nav>
+            <span class="burger material-icons" onclick="abrirMenu()">menu</span>
+        </div>
+
+    </header>
+    <div class="linkPrincipal" id="menuMobile">
+        <a href="../index.html#titulo-card" target="_self" rel="author">Tecnologias</a>
+
+        <a href="../index.html#titulo-recomendacao" target="_self" rel="next">Recomendação</a>
+
+        <a href="../paginas/sobre.html" target="_self" rel="author">Sobre</a>
+    </div>
+
+    <main>
+
+        <button class="mudarMod" onclick="mudarModo()"><img src="../imagens/lua-icon.png" alt="Trocar de tema"
+                id="lua"></button>
+
+        <section id="minha-formacao">
+
+            <div id="formacao-descricao">
+                <h1 id="escolaridade-titulo">Minha escolaridade</h1>
+                <div id="formacao-container">
+                    <div id="formacao-desc">
+                        <p>
+                            Estou no primeiro ano do ensino médio, atualmente frequentando o <strong>Insituto Federal
+                                Catarinense</strong> no
+                            Campus Ibirama.
+                            No Instituto é apresentado uma matéria chamada <q>Web Design</q> onde são ensinadas as
+                            principais
+                            tecnologias Web, junto com conceitos introdutórios sobre design de páginas, <abbr
+                                title="User Experience">UX</abbr> e <abbr title="User Interface">UI</abbr>.
+                        </p>
+                        <p>
+                            Foi durante o desenvolvimento do meu primeiro site que me
+                            apaixonei pela área e assim sendo, sigo aprofundando meus conhecimentos em todo o algomerado
+                            de ferramentas que proporcionam uma navegação na
+                            Web
+                            confortável.
+                        </p>
+                    </div>
+                    <img src="../imagens/ifc-campus-ibirama.jpg" alt="Insituto Federal Catarinense do Campus Ibirama">
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="projetos-participados">
+                <h1>Projetos desenvolvidos</h1>
+                <div id="descricao-projetos">
+                    <p>
+                        Durante os meus um ano e meio de atuação, desenvolvi um total de <strong>4 projetos</strong> ,
+                        dois
+                        deles sendo desenvolvidos com <q>modelos</q> do curso de HTML e do CursoEmVídeo<sup>&reg;</sup>
+                        e os outros dois por criação própria para melhorar meus conhecimentos.
+                    </p>
+                    <hr>
+                    <p>
+                        Três deles podem ser acessados através do GitHub Pages e o último é o meu primeiro site, que na
+                        época foi hospedado no serviço da <a href="https://br.000webhost.com/" target="_blank"
+                            rel="external">WebHostApp.</a>
+                    </p>
+                </div>
+
+                <div id="card-projetos">
+                    <div class="item-projeto" id="projeto-redes-sociais">
+                        <figure>
+                            <img src="../imagens/capa-redes-sociais.png" alt="Capa do projeto Redes Sociais">
+                        </figure>
+                        <div class="descricao-item-projeto">
+                            <h3><a href="">Redes Sociais</a></h3>
+                            <p>O projeto foi elaborado com o intuito de divulgar minhas redes sociais (Github e
+                                Facebook), e foram utilizadas as linguagens Html5 e Css3 para a criação do site. Foi
+                                desenvolvido com a ajuda do canal Curso em Vídeo.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="item-projeto" id="projeto-frontend">
+                        <figure>
+                            <img src="../imagens/capa-frontend.png" alt="Capa do projeto Frontend">
+                        </figure>
+                        <div class="descricao-item-projeto">
+                            <h3><a href="">Frontend (Este site)</a></h3>
+                            <p>O site foi realizado com a proposta de ajudar quem quer entrar na área de programação.
+                                Nele apresento sobre as diferenças entre programador e desenvolvedor frontend, além de
+                                citar as principais tecnologias utilizadas por esses profissionais.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-projeto" id="projeto-android">
+                        <figure>
+                            <img src="../imagens/android-tela-inicial.png" alt="Capa do projeto Android">
+                        </figure>
+                        <div class="descricao-item-projeto">
+                            <h3><a href="">Android</a></h3>
+                            <p>Neste projeto utilizei como base o modelo de site do CursoEmVídeo<sup>&reg;</sup>. Na
+                                época estava iniciando os conceitos básicos de Css e então utilizei o modelo html para
+                                estilizar o site conforme meus conhecimentos que iria adquirindo.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-projeto" id="projeto-infopetts">
+                        <figure>
+                            <img src="../imagens/capa-infopetts.png" alt="Capa do projeto infopetts">
+                        </figure>
+                        <div class="descricao-item-projeto">
+                            <h3><a href="">InfoPetts</a></h3>
+                            <p>Este site foi o primeiro que fiz "seriamente". Ele foi desenvolvido com a ajuda do
+                                framework Bootstrap, e foi feito para um trabalho escolar com a proposta de ajudar ong's
+                                de cachorros e gatos para adoção.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="perfis-profissionais">
+                <h1>Meus perfis profissionais</h1>
+                <p>
+                    Possuo 3 perfis para contato profissional, se quiser me contatar pode entrar em qualquer um
+                    dos links abaixo que respoderei assim que possível.
+                </p>
+
+                <div id="links-perfis">
+
+                    <div id="perfil-discord">
+                        <!--Background gradiente combinando com o fundo em 45deg-->
+                        <figure>
+                            <img src="../imagens/discord-icon.png" alt="logo-discord">
+                        </figure>
+                        <div class="perfil-link">
+                            <a href="http://" target="_blank" rel="noopener noreferrer">Visite meu perfil</a>
+                        </div>
+                    </div>
+
+                    <div id="perfil-workana">
+                        <figure>
+                            <img src="../imagens/workana-removebg-preview.png" alt="logo-workana">
+                        </figure>
+                        <div class="perfil-link">
+                            <a href="http://" target="_blank" rel="noopener noreferrer">Visite meu perfil</a>
+                        </div>
+                    </div>
+
+                    <div id="perfil-linkedin">
+                        <figure>
+                            <img src="../imagens/linkedin-logo.png" alt="logo-linkedin">
+                        </figure>
+
+                        <div class="perfil-link">
+                            <a href="http://" target="_blank" rel="noopener noreferrer">Visite meu perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-geral">
+            <div class="projetos-github">
+                <h2 class="h2">Outros projetos</h2>
+                <a href="https://github.com/Wellington-Lucas" target="_blank" rel="noopener noreferrer"><img
+                        src="../imagens/github-icon.png" alt="Logo do GitHub">Visite meus outros projetos</a>
+            </div>
+            <div class="sobre-o-criador">
+                <h2 class="h2">Conheça mais sobre mim</h2>
+                <a href="../paginas/sobre.html">Wellington Lucas<img src="../imagens/foto-de-perfil.png"
+                        alt="Minha foto de perfil">
+                </a>
+            </div>
+            <div class="contatos">
+                <h2>Meus contatos profissionais</h2>
+                <div class="contatos-link">
+                    <a href="https://wa.me/47999415910" target="_blank" rel="external"><img
+                            src="../imagens/whatsapp-icone.png" alt="icone do Whatsapp">Whatsapp</a>
+                    <a href="https://discord.gg/bSEAcnGzDw" target="_blank" rel="external"><img
+                            src="../imagens/discord-icon.png" alt="icone do Discord">Discord</a>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="../paginas/index.js"></script>
+</body>

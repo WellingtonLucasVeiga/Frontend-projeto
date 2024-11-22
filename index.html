@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Um programador front end constrói a interface visual dos Websites, portanto ele cuida da parte visível do site, por isso o nome de Front.">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/computer-laptop-icon.png" type="image/x-icon">
+
+    <!-- Compatibilidade com aparelhos Apple -->
+    <link href="imagens/computer-laptop-icon.png" rel="apple-touch-icon">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Css -->
+    <link rel="preload" href="estilos/style.css" as="style">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/mediaquery.css" media="screen">
+
+    <title>O que é ser Frontend?</title>
+</head>
+
+
+<h1>Ola, como vai?</h1>
+<p>Hoje iremos falar sobre códigos e como melhorar sua escrita.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omnis dolorem distinctio quae aspernatur perferendis voluptates, inventore dolore qui ipsum iure quam quos obcaecati minus porro eveniet eius praesentium quia!</p>
+<p>Meu deus eu sou muito programador hahahaha</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">
+                <h1 class="texto-logo">
+                    <span class="letraCustom">F</span>ront<span class="letraCustom">Q</span>uestions
+                </h1>
+            </a>
+            <nav class="linkPrincipal">
+                <a href="index.html#titulo-card" target="_self" rel="previous">Tecnologias</a>
+                <a href="index.html#titulo-recomendacao" target="_self" rel="next">Recomendações</a>
+                <a href="paginas/sobre.html" target="_self" rel="author">Sobre</a>
+            </nav>
+            <span class="burger material-icons" onclick="abrirMenu()">menu</span>
+        </div>
+
+    </header>
+    <div class="linkPrincipal" id="menuMobile">
+        <a href="index.html#titulo-card" target="_self" rel="author">Tecnologias</a>
+
+        <a href="index.html#titulo-recomendacao" target="_self" rel="next">Recomendação</a>
+
+        <a href="paginas/sobre.html" target="_self" rel="author">Sobre</a>
+    </div>
+    <main>
+
+        <button class="mudarMod" onclick="mudarModo()"><img src="imagens/lua-icon.png" alt="Trocar de tema"
+                id="lua"></button>
+
+
+        <section id="slide-inicial">
+            <div id="container-pergunta">
+                <h1 id="pergunta-principal">O que é ser <span lang="en-us">Front end</span>?</h1>
+                <div id="descricao-frontend">
+                    <p>
+                        Um programador <span lang="en-us">front-end</span> constrói a interface visual dos Websites,
+                        portanto ele cuida da parte
+                        visível do site, por isso o nome de Front. <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Diferença entre programador e desenvolvedor -->
+
+        <section id="container-diferenca">
+            <article id="diferenca-txt">
+                <h1 id="diferenca-titulo">Diferença entre programador e desenvolvedor</h1>
+                <p class="diferenca-p">
+                    Um <strong>programador</strong> está diretamente ligado à
+                    produção e elaboração do código, se importando com a lógica. Ele geralmente também fica responsável
+                    por somente uma fração do projeto.
+                </p>
+                <br>
+                <p class="diferenca-p">
+                    Já o <strong>desenvolvedor</strong> tem que ter uma visão mais ampla de todo o
+                    projeto em si, ganhando mais responsabilidades, como: ajudar a elaborar o design do site, tratar do
+                    relacionamento com seus clientes, definir as tecnologias utilizadas no processo, entre varias
+                    funções
+                </p>
+            </article>
+            <div>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="imagens/doisDesenvolvedoresP.jpg">
+                    <source media="(max-width:1200px )" srcset="imagens/doisDesenvolvedoresM.jpg">
+                    <img id="diferenca-img" src="imagens/doisDesenvolvedoresG.jpg"
+                        alt="Dois desenvolvedores escrevendo código">
+                </picture>
+            </div>
+
+        </section>
+
+        <!-- Tecnologias para começar no front -->
+
+        <section id="tecnologias-recomendadas">
+
+            <h1 id="titulo-card">Quais tecnologias eu preciso para ser um programador <span
+                    lang="en-us">Frontend</span>?</h1>
+
+            <div id="cards">
+
+                <div class="container-card card-html">
+                    <figure>
+                        <img src="imagens/iconeHtml.png" alt="">
+                    </figure>
+                    <div class="card-texto">
+                        <h2>HTML</h2>
+                        <p>
+                            A <abbr title="Hyper Text Markup Language" class="html">HTML</abbr> é a linguagem para todo
+                            <span lang="en-us">Frontend</span>, visto que ela é a base para todos os sites de hoje em
+                            dia.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="container-card card-css ">
+                    <figure>
+                        <img src="imagens/iconeCss.png" alt="">
+                    </figure>
+                    <div class="card-texto">
+                        <h2>CSS</h2>
+                        <p>
+                            A <abbr title="Cascading Style Sheets">Css</abbr> é a linguagem responsável por dar estilo e
+                            melhorar a vizualização da página, pois ela se trata de uma linguagem de
+                            <ins>estilização</ins>.
+                        </p>
+                    </div>
+                </div>
+                <div class="container-card card-js">
+                    <figure>
+                        <img src="imagens/iconeJS.png" alt="">
+                    </figure>
+                    <div class="card-texto">
+                        <h2>JavaScript</h2>
+                        <p>
+                            O <abbr title="JavaScript">JS</abbr> é a linguagem que mais exerce funções dentro dos sites
+                            atualmente, sendo uma das linguagens de programação mais utilizadas do mundo.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Requisitos para programar -->
+
+        <section id="recomendacao-pc">
+
+            <h1 id="titulo-requisitos-pc">Preciso de um computador bom?</h1>
+            <div id="requisitos-background">
+                <div class="texto-requisitos">
+                    <h2 id="titulo-pc">Não!</h2>
+                    <p class="paragrafo-requisitos">Muitas pessoas quando pensam na programação em geral, sempre pensam
+                        em
+                        grandes computadores super
+                        potentes que processam tudo, mas isso não é verdade. </p> <br>
+                    <p class="paragrafo-requisitos">Claro, para programas mais complexos isso é importante, porém para o
+                        nível iniciante em programação
+                        isso ta longe de ser uma realidade.</p>
+                </div>
+                <div class="texto-requisitos">
+                    <p class="paragrafo-requisitos">
+                        O mínimo que precisamos no inico da programação Web é de um editor de texto e um navegador.
+                        O editor de texto pode ser qualquer editor que permita o usuário salvar o arquivo com extensões
+                        <em>.html e .css.</em>
+                    </p>
+                    <br>
+                    <p class="paragrafo-requisitos">
+                        Você também pode baixar editores de códigos "leves", como o <a
+                            href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a> ou até
+                        mesmo o <a href="https://www.sublimetext.com/" target="_blank" rel="external">SublimeText</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recomendação de Sites -->
+        <section id="sites-recomendados">
+            <h1 id="titulo-recomendacao">Alguns sites que recomendo</h1>
+            <div>
+                <p id="descricao-recomendacao">
+                    E por fim, recomendarei alguns sites onde será possível treinar sua programação, sua lógica e até
+                    mesmo utilizá-los para consultas futuras.
+                </p>
+            </div>
+            <div id="sites">
+
+                <div class="item frontMentor">
+                    <div class="lado-esq-sites">
+                        <figure>
+                            <img src="imagens/FrontendM.png" alt="Logo do FrontendMentor"
+                                title="Logo do FrontendMentor">
+                        </figure>
+
+                        <a href="https://www.frontendmentor.io/" target="_blank" rel="nofollow"><span
+                                class="material-icons">link</span>Visite</a>
+                    </div>
+                    <div class="lado-dir-sites">
+                        <h2>FrontEnd Mentor</h2>
+                        <p><q>Melhore suas habilidades de codificação front-end criando projetos reais.</q></p>
+                    </div>
+                </div>
+
+                <div class="item w3c">
+                    <div class="lado-esq-sites">
+                        <figure>
+                            <img src="imagens/w3c-icon.png" alt="Logo do FrontendMentor" title="Logo do FrontendMentor">
+                        </figure>
+
+                        <a href="https://www.w3schools.com" target="_blank" rel="nofollow">
+                            <span class="material-icons">link</span> Visite</a>
+                    </div>
+                    <div class="lado-dir-sites">
+                        <h2>W3C Schools</h2>
+                        <p><q>O W3Schools é otimizado para aprendizado, teste e treinamento.</q></p>
+                    </div>
+                </div>
+                <div class="item codecademy">
+                    <div class="lado-esq-sites">
+                        <figure>
+                            <img src="imagens/code-academy-icon.png" alt="Logo da Codecademy"
+                                title="Logo da Codecademy">
+                        </figure>
+
+                        <a href="http://" target="_blank" rel="nofollow"><span
+                                class="material-icons">link</span>Visite</a>
+                    </div>
+                    <div class="lado-dir-sites">
+                        <h2>Codecademy</h2>
+                        <p><q>Aprenda as habilidades técnicas para conseguir o emprego que deseja</q></p>
+                    </div>
+                </div>
+                <div class="item mdn">
+                    <div class="lado-esq-sites">
+                        <figure>
+                            <img src="imagens/mdn-icon.png" alt="Logo da MDN" title="Logo da MDN">
+                        </figure>
+
+                        <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="nofollow"><span
+                                class="material-icons">link</span>Visite</a>
+
+                    </div>
+                    <div class="lado-dir-sites">
+                        <h2>MDN</h2>
+                        <p><q>O site MDN Web Docs fornece informações sobre tecnologias Open Web, incluindo HTML e CSS
+                                para sites.</q></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-geral">
+            <div class="projetos-github">
+                <h2 class="h2">Outros projetos</h2>
+                <a href="https://github.com/Wellington-Lucas" target="_blank" rel="noopener noreferrer"><img
+                        src="imagens/github-icon.png" alt="Logo do GitHub">Visite meus outros projetos</a>
+            </div>
+            <div class="sobre-o-criador">
+                <h2 class="h2">Conheça mais sobre mim</h2>
+                <a href="paginas/sobre.html">Wellington Lucas<img src="imagens/foto-de-perfil.png"
+                        alt="Minha foto de perfil">
+                </a>
+            </div>
+            <div class="contatos">
+                <h2>Meus contatos profissionais</h2>
+                <div class="contatos-link">
+                    <a href="https://wa.me/47999415910" target="_blank" rel="external"><img
+                            src="imagens/whatsapp-icone.png" alt="icone do Whatsapp">Whatsapp</a>
+                    <a href="https://discord.gg/bSEAcnGzDw" target="_blank" rel="external"><img
+                            src="imagens/discord-icon.png" alt="icone do Discord">Discord</a>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="paginas/index.js"></script>
+
+</body>
+
+</html>

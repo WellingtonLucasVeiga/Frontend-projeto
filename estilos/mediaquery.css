@@ -1,0 +1,260 @@
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    html {
+        font-size: 62%;
+    }
+
+    #card-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    #descricao-projetos p {
+        width: 100%;
+    }
+
+    #minha-formacao {
+        padding: 0 80px;
+    }
+
+    #formacao-container {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #formacao-container p {
+        text-align: center;
+        margin: auto;
+        text-indent: 0;
+    }
+
+    #descricao-projetos {
+        max-width: 600px;
+        margin: 150px auto;
+    }
+
+    #formacao-desc {
+        margin-bottom: 50px;
+    }
+
+    .footer-geral {
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 60%;
+    }
+
+    nav.linkPrincipal {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        color: white;
+    }
+
+    .burger::selection {
+        background-color: transparent;
+    }
+
+    #menuMobile {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        background-image: linear-gradient(to bottom, var(--corPrincipal), #342db3);
+        height: 200px;
+        width: 100%;
+        z-index: 2;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #menuMobile a {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        border: 1px solid transparent;
+        position: relative;
+    }
+
+    #menuMobile a::before {
+        transition: .35s;
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 1px solid white;
+        width: 0%;
+    }
+
+    #menuMobile a:hover::before {
+        width: 100%;
+    }
+
+    #titulo-card:target, #titulo-recomendacao:target {
+        scroll-margin-top: 300px;
+    }
+
+    #container-pergunta {
+        padding: 40px;
+    }
+
+    #sites {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+        justify-content: center;
+        margin: 0 auto 40px auto;
+    }
+
+    .item p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item img {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .item figure {
+        border: 0px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .lado-esq-sites {
+        order: 2;
+    }
+
+
+    .lado-dir-sites {
+        order: 1;
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .item a {
+        order: 3;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .footer-geral {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-geral a {
+        max-width: max-content;
+    }
+
+    div.contatos-link {
+        flex-direction: column;
+    }
+
+    #minha-formacao {
+        padding: 0 40px;
+    }
+
+    #card-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    
+    #formacao-container img {
+        width: 100%;
+    }
+
+    #formacao-container p {
+        padding: 20px 0px;
+    }
+
+    .item-projeto {
+        max-width: 300px;
+    }
+
+    .descricao-item-projeto {
+        padding: 0 10px 10px 10px;        
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 55%;
+    }
+
+    #container-pergunta {
+        padding: 40px;
+    }
+
+    #pergunta-principal {
+        font-size: 4.5rem;
+    }
+
+    .diferenca-p {
+        line-height: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .container-card {
+        width: max-content;
+        margin-bottom: 50px;
+    }
+
+    .container-card img {
+        display: block;
+        margin: auto;
+        width: 280px;
+    }
+
+    .texto-requisitos:first-child {
+        margin-bottom: 210px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+        max-width: 75%;
+    }
+
+    .sobre-o-criador {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-geral {
+        row-gap: 50px;
+    }
+
+    .footer-geral div {
+        align-items: center;
+    }
+
+    .footer-geral a {
+        width: 100%;
+    }
+
+    #minha-formacao {
+        padding: 0 20px;
+    }
+}
